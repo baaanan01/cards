@@ -7,23 +7,25 @@
           class="img"
           alt="spike"
           src="https://i.pinimg.com/564x/a9/b5/b6/a9b5b624f317efc409c7054c675b957d.jpg"
-          width="200"
+          width="250"
         />
         <p>Spike Spiegel<br />Space Cowboy</p>
       </div>
       <div class="box1">
         <h3>Information</h3>
         <form>
-          <label for="fname">First name:</label><br />
-          <input type="text" id="fname" name="fname" required /><br />
+          <label for="fname">First name:</label><br/>
+          <input type="text" id="fname" name="fname" required /><br/>
           <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" /><br />
+          <input type="text" id="lname" name="lname" /><br/>
+          <h4>important question</h4>
+          <textarea class = "formmmm" placeholder = "your favourite beer..." name="message" rows="3" cols="20">
+          </textarea><br/>
           <input class="rainbow rainbow-1" type="submit" value="Submit" />
-          <input class="btn" type="reset" value="Reset" />
+          <input class="btn" type="reset" value="Reset"/>
         </form>
       </div>
     </div>
-    <footer class="footer">See you space cowboy</footer>
   </div>
 </template>
 
@@ -72,14 +74,19 @@ Flexbox состоит из гибкого контейнера (flex container)
   border: 1px solid;
   flex: 1 1 100px;
   margin: 0 5px;
+  background: #ffffff;
+  box-shadow: 0 4px 38px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
 }
+
+
 .img {
   margin-top: 10px;
 }
 .btn {
   font-family: Poppins, sans-serif;
-  background-color: #b81010;
-  color: rgb(255, 253, 253);
+  background-color: rgb(252, 186, 186);
+  color: black;
+  
   border-radius: 4px;
   padding: 8px 16px;
   border: 0;
@@ -90,10 +97,10 @@ Flexbox состоит из гибкого контейнера (flex container)
    При этом блок увеличится на 20 процентов с сохранением своих пропорций: */
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
-  transform: scale(1.2);
+  transform: scale(1.3);
   /* при наведении на кнопку меняется цвет  */
-  background-color: rgb(253, 224, 224);
-  color: black;
+  background-color: #b81010;
+  color: rgb(255, 253, 253);
 }
 
 .container {
@@ -141,11 +148,6 @@ Flexbox состоит из гибкого контейнера (flex container)
   text-decoration: none;
 }
 
-.footer {
-  position: fixed;
-  text-align: left;
-  bottom: 0;
-}
 /* .box2 {
   margin-left: auto;
   margin-right: auto;
