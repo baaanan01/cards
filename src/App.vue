@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <HelloWorld msg="Personal Card"/>
   </div>
 </template>
 
@@ -14,15 +14,19 @@ export default {
     HelloWorld
   }
 }
+
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Oswald');
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  
+  font-family: Inconsolata, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
 }
+
 </style>
