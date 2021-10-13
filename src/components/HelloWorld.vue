@@ -3,12 +3,7 @@
     <h1>{{ msg }}</h1>
     <div class="wrapper">
       <div class="box1">
-        <img
-          class="img"
-          alt="spike"
-          src="https://i.pinimg.com/564x/a9/b5/b6/a9b5b624f317efc409c7054c675b957d.jpg"
-          width="250"
-        />
+        <img class="img" alt="spike" src="https://i.pinimg.com/564x/a9/b5/b6/a9b5b624f317efc409c7054c675b957d.jpg" width="250"/>
         <p>Spike Spiegel<br />Space Cowboy</p>
       </div>
       <div class="box1">
@@ -81,6 +76,10 @@ Flexbox состоит из гибкого контейнера (flex container)
 
 .img {
   margin-top: 10px;
+  width: 150px; height: 150px; /* Ширина и высота */
+   border-radius: 50%; /* Превращаем в круг */
+   background-size: auto 150px; /* Высота фотографии равна высоте элемента */
+
 }
 .btn {
   font-family: Poppins, sans-serif;
