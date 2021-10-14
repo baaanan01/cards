@@ -3,21 +3,25 @@
     <h1>{{ msg }}</h1>
     <div class="wrapper">
       <div class="box1">
-        <img class="img" alt="spike" src="https://i.pinimg.com/564x/a9/b5/b6/a9b5b624f317efc409c7054c675b957d.jpg" width="250"/>
+        <img
+          class="img"
+          alt="spike"
+          src="https://i.pinimg.com/564x/a9/b5/b6/a9b5b624f317efc409c7054c675b957d.jpg"
+          width="250"
+        />
         <p>Spike Spiegel<br />Space Cowboy</p>
       </div>
       <div class="box1">
         <h3>Information</h3>
         <form>
-          <label for="fname">First name:</label><br/>
-          <input type="text" id="fname" name="fname" required /><br/>
+          <label for="fname">First name:</label><br />
+          <input type="text" id="fname" name="fname" required /><br />
           <label for="lname">Last name:</label><br />
-          <input type="text" id="lname" name="lname" /><br/>
+          <input type="text" id="lname" name="lname" /><br />
           <h4>important question</h4>
-          <textarea class = "formmmm" placeholder = "your favourite beer..." name="message" rows="3" cols="20">
-          </textarea><br/>
+          <textarea class="formmmm" placeholder="your favourite beer..." name="message" rows="3" cols="20"></textarea><br />
           <input class="rainbow rainbow-1" type="submit" value="Submit" />
-          <input class="btn" type="reset" value="Reset"/>
+          <input class="btn" type="reset" value="Reset" />
         </form>
       </div>
     </div>
@@ -55,11 +59,16 @@ Flexbox состоит из гибкого контейнера (flex container)
   padding-right: 16px;
   grid-template-columns: repeat(2, 1fr);
   display: flex;
-  flex-wrap: wrap; /* flex-wrap задаёт правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков.  */
+ /* flex-wrap: wrap;  flex-wrap задаёт правила вывода flex-элементов —  в одну строку или в несколько, с переносом блоков.  */
   justify-content: center; /*CSS свойство  justify-content определяет, как браузер распределяет пространство между и вокруг элементов контента
                                вдоль главной оси flex контейнера, или вдоль строчной оси grid контейнера. */
 }
-
+@media only screen and (max-width: 400px) 
+{
+	.wrapper {
+		flex-direction: column;
+	}
+}
 .box1 {
   margin-left: auto;
   margin-right: auto;
@@ -70,22 +79,21 @@ Flexbox состоит из гибкого контейнера (flex container)
   flex: 1 1 100px;
   margin: 0 5px;
   background: #ffffff;
-  box-shadow: 0 4px 38px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
+  box-shadow: 0 4px 38px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
 }
-
 
 .img {
   margin-top: 10px;
-  width: 150px; height: 150px; /* Ширина и высота */
-   border-radius: 50%; /* Превращаем в круг */
-   background-size: auto 150px; /* Высота фотографии равна высоте элемента */
-
+  width: 150px;
+  height: 150px; /* Ширина и высота */
+  border-radius: 50%; /* Превращаем в круг */
+  background-size: auto 150px; /* Высота фотографии равна высоте элемента */
 }
 .btn {
   font-family: Poppins, sans-serif;
   background-color: rgb(252, 186, 186);
   color: black;
-  
+
   border-radius: 4px;
   padding: 8px 16px;
   border: 0;
